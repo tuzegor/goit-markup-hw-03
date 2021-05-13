@@ -355,6 +355,7 @@ body {
 
 .gallery-item-box {
   padding: 20px 24px;
+  border: 1px solid #eeeeee;
 }
 
 /* =========END PORTFOLIO PAGE========= */
