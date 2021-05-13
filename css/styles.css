@@ -17,7 +17,8 @@
 h1,
 h2,
 h3,
-h4 {
+h4,
+p {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -53,6 +54,8 @@ body {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+
+  margin-bottom: 50px;
 }
 
 /* =======END COMPONENTS======= */
@@ -70,7 +73,6 @@ body {
   color: var(--primary-color);
 }
 .logo {
-  margin-right: 93px;
   color: var(--primary-color);
 }
 .logo-accent {
@@ -95,6 +97,7 @@ body {
   background-color: #2f303a;
   height: 600px;
   padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
   color: #fff;
@@ -115,6 +118,8 @@ body {
 .hero-button {
   background-color: var(--accent-color);
   color: #fff;
+  border-radius: 4px;
+
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -134,6 +139,7 @@ body {
 }
 
 /* our-values */
+
 .values-title {
   font-size: 14px;
   line-height: 1.15;
@@ -149,7 +155,7 @@ body {
 }
 
 .profession,
-.name {
+.team-name {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -159,7 +165,7 @@ body {
   color: var(--secondary-color);
 }
 
-.name {
+.team-name {
   font-weight: 500;
 }
 /* =========END MAIN CONTENT========= */
@@ -219,19 +225,89 @@ body {
   display: flex;
   align-items: center;
 }
+
 .menu {
-  width: 294px;
-  justify-content: space-between;
-  margin-right: 331px;
+  margin-left: 93px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
+.contacts {
+  margin-left: auto;
+}
+.menu-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .contacts-item:first-child {
   margin-right: 50px;
 }
+
 .header-box {
   display: flex;
+}
+/* ------------------------ */
+.values {
+  display: flex;
+}
+
+.our-values {
+  padding-top: 94px;
+  padding-bottom: 47px;
+}
+.values-item {
+  width: 270px;
+  height: 101px;
+}
+.values-item:not(:last-child) {
+  margin-right: 30px;
+}
+/* ------------------------ */
+.our-projects {
+  padding-top: 47px;
+  padding-bottom: 94px;
+}
+.projects {
+  display: flex;
+  justify-content: space-between;
+}
+
+.our-team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.team {
+  display: flex;
+  justify-content: space-between;
+}
+.team-img {
+  margin-bottom: 30px;
+}
+.values-title,
+.team-name {
+  margin-bottom: 10px;
+}
+.team-item {
+  width: 270px;
+  padding-bottom: 30px;
+  background-color: #fff;
+}
+.container {
   width: 1200px;
-  height: 80px;
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
+}
+
+/* ----------------------- */
+.footer-address {
+  margin-top: 20px;
+}
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-address a {
+  display: inline-block;
+  margin-top: 9px;
 }
